@@ -1,4 +1,4 @@
-# Vite2 + React + Typescript Boilerplate
+# Vite2 + React + Typescript Starter Boilerplate
 
 > Template for internally usage.
 
