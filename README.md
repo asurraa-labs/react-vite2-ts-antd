@@ -1,7 +1,5 @@
 # Vite2 + React + Typescript Starter Boilerplate
 
-> Template for internally usage.
-
  
 ## Feature
 
