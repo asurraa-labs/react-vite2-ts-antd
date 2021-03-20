@@ -2,30 +2,34 @@
   "name": "viteapp-example-with-react",
   "author": "@asurraa",
   "version": "1.0.0",
+  "homepage": "http://asurraa.github.io/react-vite2",
   "license": "MIT",
   "scripts": {
     "dev": "vite --mode development",
     "build:beta": "vite build --mode beta",
     "build:release": "vite build --mode release",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "yarn build:release",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "antd": "^4.14.0",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
     "@types/babel__core": "^7.1.14",
-    "vite-plugin-imp": "^2.0.4",
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@vitejs/plugin-react-refresh": "^1.1.0",
+    "less": "^4.1.1",
+    "less-vars-to-js": "^1.3.0",
     "typescript": "^4.1.2",
     "vite": "^2.0.1",
     "vite-aliases": "^0.5.0",
     "vite-plugin-babel-import": "^2.0.2",
-    "less-vars-to-js": "^1.3.0",
-    "less": "^4.1.1"
+    "vite-plugin-imp": "^2.0.4"
   }
 }
