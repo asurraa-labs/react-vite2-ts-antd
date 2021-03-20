@@ -2,7 +2,7 @@
   "name": "viteapp-example-with-react",
   "author": "@asurraa",
   "version": "1.0.0",
-  "homepage": ".",
+  "homepage": "http://asurraa.github.io/react-vite2",
   "license": "MIT",
   "scripts": {
     "dev": "vite --mode development",
