@@ -1,12 +1,40 @@
 import { defineConfig } from "vite";
 import reactRefresh from "@vitejs/plugin-react-refresh";
-import { getAliases } from "vite-aliases";
+import vitePluginImp from "vite-plugin-imp";
+import path from "path";
+import fs from "fs";
+// @ts-ignore
+// * No declaration file for less-vars-to-js
+import lessToJS from "less-vars-to-js";
 
-const aliases = getAliases();
+const themeVariables = lessToJS(
+  fs.readFileSync(path.resolve(__dirname, "./config/variables.less"), "utf8")
+);
 
 export default defineConfig({
-  plugins: [reactRefresh()],
+  plugins: [
+    reactRefresh(),
+    vitePluginImp({
+      libList: [
+        {
+          libName: "antd",
+          style: (name) => `antd/lib/${name}/style/index.less`,
+        },
+      ],
+    }),
+  ],
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+        modifyVars: themeVariables,
+      },
+    },
+  },
   resolve: {
-    alias: aliases,
+    alias: {
+      "~": path.resolve(__dirname, "./"),
+      "@": path.resolve(__dirname, "src"),
+    },
   },
 });
