@@ -1,7 +1,7 @@
 {
   "name": "viteapp-example-with-react",
-  "version": "0.1.0",
-  "license": "MIT",
+  "author": "@asurraa",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
