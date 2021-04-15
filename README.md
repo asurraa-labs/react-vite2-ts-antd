@@ -1,4 +1,4 @@
-![Latest commit](https://badgen.net/github/last-commit/asurraa/sura_flutter)
+![Latest commit](https://badgen.net/github/last-commit/asurraa/react-vite2-ts-antd)
 # Vite2 + React + Typescript + Antd Starter Boilerplate
 
  
