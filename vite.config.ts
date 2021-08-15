@@ -17,12 +17,7 @@ const themeVariables = lessToJS(
 
 export default defineConfig({
   plugins: [
-    ViteAliases({
-      useConfig: true,
-      useTypescript: true,
-      allowLogging: true,
-      adjustDuplicates: true,
-    }),
+    ViteAliases({}),
     reactJsx(),
     reactRefresh(),
     vitePluginImp({
