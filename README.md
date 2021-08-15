@@ -1,12 +1,13 @@
 ![Latest commit](https://badgen.net/github/last-commit/asurraa/react-vite2-ts-antd)
-# Vite2 + React + Typescript + Antd Starter Boilerplate
+# Vite2 + React + TS + Antd Starter Boilerplate
 
  
-## Feature
+### Feature
 
 - alias import
 - build tools from [vite2](https://github.com/vitejs/vite)
 - antd Design Config embedded
+- yarn2
 
 ### References
 
@@ -17,4 +18,4 @@
 - [awesome-vite](https://github.com/vitejs/awesome-vite) - A curated list of awesome things related to Vite.js.
 - [vit-react-official-example](https://github.com/vitejs/vite/tree/main/packages/create-app/template-react-ts) - official example from vit.
 
-## @AsurRaa 2021
+
