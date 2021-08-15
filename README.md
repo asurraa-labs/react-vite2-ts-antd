@@ -1,5 +1,5 @@
 ![Latest commit](https://badgen.net/github/last-commit/asurraa/react-vite2-ts-antd)
-# Vite2 + React + Typescript + Antd Starter Boilerplate
+# Vite2 + React + TS + Antd Starter Boilerplate
 
  
 ## Feature
