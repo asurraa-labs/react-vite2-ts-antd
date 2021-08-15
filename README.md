@@ -7,6 +7,7 @@
 - alias import
 - build tools from [vite2](https://github.com/vitejs/vite)
 - antd Design Config embedded
+- yarn2
 
 ### References
 
@@ -17,4 +18,4 @@
 - [awesome-vite](https://github.com/vitejs/awesome-vite) - A curated list of awesome things related to Vite.js.
 - [vit-react-official-example](https://github.com/vitejs/vite/tree/main/packages/create-app/template-react-ts) - official example from vit.
 
-## @AsurRaa 2021
+
