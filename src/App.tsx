@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { DatePicker } from "antd";
-
+import { Test } from "@components/test";
 const App = () => {
   return (
     <Fragment>
@@ -15,6 +15,7 @@ const App = () => {
         <div>
           <h1>Hello world</h1>
           <DatePicker />
+          <Test />
         </div>
       </div>
     </Fragment>

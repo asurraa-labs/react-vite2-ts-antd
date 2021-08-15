@@ -4,8 +4,9 @@ import lessToJS from "less-vars-to-js";
 import { defineConfig } from "vite";
 import reactRefresh from "@vitejs/plugin-react-refresh";
 import vitePluginImp from "vite-plugin-imp";
+import { ViteAliases } from "vite-aliases";
 import reactJsx from "vite-react-jsx";
-import { resolve } from "path";
+import path, { resolve } from "path";
 import fs from "fs";
 
 const pathResolver = (path: string) => resolve(__dirname, path);
@@ -16,6 +17,12 @@ const themeVariables = lessToJS(
 
 export default defineConfig({
   plugins: [
+    ViteAliases({
+      useConfig: true,
+      useTypescript: true,
+      allowLogging: true,
+      adjustDuplicates: true,
+    }),
     reactJsx(),
     reactRefresh(),
     vitePluginImp({
@@ -33,12 +40,6 @@ export default defineConfig({
         javascriptEnabled: true,
         modifyVars: themeVariables,
       },
-    },
-  },
-  resolve: {
-    alias: {
-      "~": pathResolver("./"),
-      "@": pathResolver("src"),
     },
   },
 });

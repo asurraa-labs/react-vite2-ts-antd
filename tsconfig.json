@@ -1,21 +1,40 @@
 {
-  "compilerOptions": {
-    "target": "ESNEXT",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "strictNullChecks": false,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": "."
-  }
+    "extends": "./tsconfig.alias.json",
+    "compilerOptions": {
+        "target": "ESNEXT",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "strictNullChecks": false,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "baseUrl": ".",
+        "paths": {
+            "@assets/*": [
+                "/Users/lyhourchhen/Developments/react-vite2-ts-antd/src/assets/*"
+            ],
+            "@components/*": [
+                "/Users/lyhourchhen/Developments/react-vite2-ts-antd/src/components/*"
+            ],
+            "@logs/*": [
+                "/Users/lyhourchhen/Developments/react-vite2-ts-antd/src/logs/*"
+            ],
+            "@/*": [
+                "/Users/lyhourchhen/Developments/react-vite2-ts-antd/src/*"
+            ]
+        }
+    }
 }
