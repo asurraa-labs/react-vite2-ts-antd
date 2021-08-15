@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import reactRefresh from "@vitejs/plugin-react-refresh";
 import vitePluginImp from "vite-plugin-imp";
+import reactJsx from "vite-react-jsx";
 import path from "path";
 import fs from "fs";
 // @ts-ignore
@@ -13,6 +14,7 @@ const themeVariables = lessToJS(
 
 export default defineConfig({
   plugins: [
+    reactJsx(),
     reactRefresh(),
     vitePluginImp({
       libList: [

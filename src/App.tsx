@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import { DatePicker } from "antd";
-import React from "react";
 
 const App = () => {
   return (
