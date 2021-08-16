@@ -31,6 +31,7 @@
     "vite": "^2.4.4",
     "vite-aliases": "^0.8.6",
     "vite-plugin-babel-import": "^2.0.5",
-    "vite-plugin-imp": "^2.0.7"
+    "vite-plugin-imp": "^2.0.7",
+    "vite-plugin-inspect": "^0.0.2"
   }
 }

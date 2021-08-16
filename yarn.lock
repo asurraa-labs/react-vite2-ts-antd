@@ -671,6 +671,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@polka/url@npm:^1.0.0-next.17":
+  version: 1.0.0-next.17
+  resolution: "@polka/url@npm:1.0.0-next.17"
+  checksum: 6a24aa7a04b3b50fa42e9c7c2f3ca46a762773850b663c4e5ed67939ff94c66d5361d1a1866cc82a0c171c3dd043b62b30881a04f51fc77dc9efc3716b77d563
+  languageName: node
+  linkType: hard
+
 "@rollup/pluginutils@npm:^4.1.1":
   version: 4.1.1
   resolution: "@rollup/pluginutils@npm:4.1.1"
@@ -1341,7 +1348,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4":
+"debug@npm:4, debug@npm:^4.3.2":
   version: 4.3.2
   resolution: "debug@npm:4.3.2"
   dependencies:
@@ -2128,6 +2135,15 @@ __metadata:
   bin:
     mime: cli.js
   checksum: fef25e39263e6d207580bdc629f8872a3f9772c923c7f8c7e793175cee22777bbe8bba95e5d509a40aaa292d8974514ce634ae35769faa45f22d17edda5e8557
+  languageName: node
+  linkType: hard
+
+"mime@npm:^2.3.1":
+  version: 2.5.2
+  resolution: "mime@npm:2.5.2"
+  bin:
+    mime: cli.js
+  checksum: dd3c93d433d41a09f6a1cfa969b653b769899f3bd573e7bfcea33bdc8b0cc4eba57daa2f95937369c2bd2b6d39d62389b11a4309fe40d1d3a1b736afdedad0ff
   languageName: node
   linkType: hard
 
@@ -3366,6 +3382,17 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
+"sirv@npm:^1.0.14":
+  version: 1.0.14
+  resolution: "sirv@npm:1.0.14"
+  dependencies:
+    "@polka/url": ^1.0.0-next.17
+    mime: ^2.3.1
+    totalist: ^1.0.0
+  checksum: 3d6fbc8d3ca93050abcbaa58c32dd91dc704a0215a7504eecd5fe33c1a158c20b6137d7b5390634e246899546f490a7ca0ac3fb5a9046cff1780b732d1fd2c00
+  languageName: node
+  linkType: hard
+
 "smart-buffer@npm:^4.1.0":
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0"
@@ -3560,6 +3587,13 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
+"totalist@npm:^1.0.0":
+  version: 1.1.0
+  resolution: "totalist@npm:1.1.0"
+  checksum: dfab80c7104a1d170adc8c18782d6c04b7df08352dec452191208c66395f7ef2af7537ddfa2cf1decbdcfab1a47afbbf0dec6543ea191da98c1c6e1599f86adc
+  languageName: node
+  linkType: hard
+
 "trim-repeated@npm:^1.0.0":
   version: 1.0.0
   resolution: "trim-repeated@npm:1.0.0"
@@ -3600,6 +3634,13 @@ typescript@^4.3.5:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: bc2c4fdf0f1557fdafe4ef74848c72ebd9c8c60829568248f869121aea2bb20e16649a252431d0acb185ec118143be22bed73d08f64379557810d82756afedde
+  languageName: node
+  linkType: hard
+
+"ufo@npm:^0.7.7":
+  version: 0.7.7
+  resolution: "ufo@npm:0.7.7"
+  checksum: d7d182c21ad01d3d8954875b67958f2adc612fa9a16faa5f366e419736fa69a1f61285858ded3314e410d8564ddbe8ce842280921f4cfba35ab9caae7e817107
   languageName: node
   linkType: hard
 
@@ -3695,6 +3736,19 @@ typescript@^4.3.5:
   languageName: node
   linkType: hard
 
+"vite-plugin-inspect@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "vite-plugin-inspect@npm:0.0.2"
+  dependencies:
+    debug: ^4.3.2
+    sirv: ^1.0.14
+    ufo: ^0.7.7
+  peerDependencies:
+    vite: ^2.0.0
+  checksum: df5729aa5c04ee2093f4ff08624a1f3d6af9769d661e0ade92dc00eabe48ed9fcb05920fec668c4d9757acccf74b202d3570f341aa1428f1bf2e225c818675b5
+  languageName: node
+  linkType: hard
+
 "vite-react-jsx@npm:^1.1.2":
   version: 1.1.2
   resolution: "vite-react-jsx@npm:1.1.2"
@@ -3748,6 +3802,7 @@ typescript@^4.3.5:
     vite-aliases: ^0.8.6
     vite-plugin-babel-import: ^2.0.5
     vite-plugin-imp: ^2.0.7
+    vite-plugin-inspect: ^0.0.2
     vite-react-jsx: ^1.1.2
   languageName: unknown
   linkType: soft
