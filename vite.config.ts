@@ -7,11 +7,10 @@ import vitePluginImp from "vite-plugin-imp";
 import { ViteAliases } from "vite-aliases";
 import Inspect from "vite-plugin-inspect";
 import reactJsx from "vite-react-jsx";
-import path, { resolve } from "path";
+import { resolve } from "path";
 import fs from "fs";
 
 const pathResolver = (path: string) => resolve(__dirname, path);
-
 const themeVariables = lessToJS(
   fs.readFileSync(pathResolver("./config/variables.less"), "utf8")
 );
@@ -26,7 +25,12 @@ export default defineConfig({
       libList: [
         {
           libName: "antd",
-          style: (name) => `antd/lib/${name}/style/index.less`,
+          style: (name) => {
+            if (name === "col" || name === "row") {
+              return "antd/lib/style/index.less";
+            }
+            return `antd/es/${name}/style/index.less`;
+          },
         },
       ],
     }),
