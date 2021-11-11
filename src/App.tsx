@@ -13,10 +13,9 @@ const App = () => {
         }}
       >
         <div>
-          <h1>Hello world</h1>
+          <h1>Hello AsurRaa</h1>
           <DatePicker />
           <Col></Col>
-          <Test />
         </div>
       </div>
     </Fragment>
