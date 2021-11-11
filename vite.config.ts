@@ -16,6 +16,7 @@ const themeVariables = lessToJS(
 );
 
 export default defineConfig({
+  base: "./",
   plugins: [
     Inspect(),
     ViteAliases({}),

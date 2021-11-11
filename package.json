@@ -2,15 +2,15 @@
   "name": "viteapp-example-with-react",
   "author": "@asurraa",
   "version": "1.0.0",
-  "homepage": "http://asurraa.github.io/react-vite2",
+  "homepage": "./",
   "license": "MIT",
   "scripts": {
     "dev": "vite --mode development",
     "build:beta": "vite build --mode beta",
-    "build:release": "vite build --mode release",
+    "build": "vite build --mode release",
     "serve": "vite preview",
     "predeploy": "yarn build:release",
-    "deploy": "gh-pages -d dist"
+    "deploy": "sh ./scripts/deploy.sh"
   },
   "dependencies": {
     "antd": "^4.16.11",
