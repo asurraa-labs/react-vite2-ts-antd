@@ -1,0 +1,1 @@
+import{j as e,r,a as t,D as n,C as s,R as a}from"./vendor.2494ba94.js";const d=()=>e(r.exports.Fragment,{children:e("div",{style:{display:"flex",justifyContent:"center",alignItems:"center",height:"100vh"},children:t("div",{children:[e("h1",{children:"Hello AsurRaa"}),e(n,{}),e(s,{})]})})});a.render(e(r.exports.StrictMode,{children:e(d,{})}),document.getElementById("root"));
