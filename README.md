@@ -17,3 +17,6 @@
 - [vite-react-typescript](https://github.com/Dieman89/vite-reactts-chakra-starter) - sample vite + react + typescript.
 - [awesome-vite](https://github.com/vitejs/awesome-vite) - A curated list of awesome things related to Vite.js.
 - [vit-react-official-example](https://github.com/vitejs/vite/tree/main/packages/create-app/template-react-ts) - official example from vit.
+
+## Apps 
+- [qr-code-tools](https://qrcode.tools.asurraa.dev/) - free qr code tools.
