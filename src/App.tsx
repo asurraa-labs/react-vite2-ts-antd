@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Col, DatePicker } from "antd";
-import { Test } from "@components/test";
+import { Text } from "./components/text";
+
 const App = () => {
   return (
     <Fragment>
@@ -13,9 +14,8 @@ const App = () => {
         }}
       >
         <div>
-          <h1>Hello AsurRaa</h1>
+          <Text title="Hello AsurRaa" />
           <DatePicker />
-          <Col></Col>
         </div>
       </div>
     </Fragment>
