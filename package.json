@@ -8,6 +8,7 @@
     "dev": "vite --mode development",
     "build:beta": "vite build --mode beta",
     "build": "vite build --mode release",
+    "build:release": "vite build --mode release",
     "serve": "vite preview",
     "predeploy": "yarn build:release",
     "deploy": "sh ./scripts/deploy.sh",
